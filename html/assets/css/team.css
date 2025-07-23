@@ -1,0 +1,76 @@
+/* 团队成员头像大小一致，居中裁剪 */
+.team-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片外框样式 */
+.single-team {
+    background: #fff;
+    padding: 20px 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.single-team:hover {
+    transform: translateY(-5px);
+}
+
+/* 名字文字样式 */
+.team-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* 社交图标容器 */
+.team-social-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.team-img {
+    position: relative;
+}
+
+.single-team:hover .team-social-icon {
+    opacity: 1;
+}
+
+/* 社交图标样式 */
+.team-social-icon ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-social-icon ul li a {
+    display: inline-block;
+    font-size: 16px;
+    color: #555;
+    background: #eee;
+    border-radius: 50%;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.team-social-icon ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
